@@ -1,0 +1,313 @@
+/* Responsive Styles */
+@media screen and (max-width: 576px){
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    .section-padding{
+        padding: 60px 17px;
+        padding-bottom: 20px;
+        margin: 0px;
+    }
+    .section-title{
+        font-size: 1.7rem;
+        font-weight: bold;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+    }
+    .nav-links,
+    .nav-title,
+    .nav-btn,
+    .curriculum-nav-btns,
+    #story-card-1{
+        display: none;
+    }
+    /* nav styles */
+    .header{
+        border: 2px solid orange;
+        margin: 0px;
+        padding: 10px;
+        max-width: 576px;
+    }
+    .burger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar{
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+    .main{
+        padding: 12px;
+        margin: 0px;
+    }
+    /* banner area */
+
+    .banner{
+        flex-direction: column-reverse;
+        padding: 0.5px;
+        object-fit: cover;
+        margin: 0px 17px;
+        gap: 20px;
+    }
+    .banner-section{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .banner-section>h1 {
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+
+    .banner-info{
+        font-size: 2.25rem;
+        margin: 0.5px;
+    }
+    .banner-img{
+        width: 100%;
+    }
+    .img-fluid{
+        width: 100%;
+        object-fit: cover;
+    }
+    @media (max-width: 768px) { 
+        .banner-button {
+          width: 200px; /* Adjust width as needed */
+          font-size: 16px; /* Adjust font size as needed */
+        }
+      }
+
+
+    /* curriculum styles */
+    /* Curriculum styles */
+.curriculum {
+    background-image: url('./image/bg.png');
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+  }
+  
+  .curriculum-icon {
+    display: none;
+  }
+  
+  .curriculum-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px;
+  }
+  
+  .curriculum-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+    height: 30rem;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(6, 6, 6, 0.879), 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 0px 40px;
+    box-shadow: 0 0 28px 0.94px rgba(0, 0, 0, 0.02);
+  }
+  
+  .box-card1 {
+    background-image: linear-gradient(to bottom, #def5ff, #ffffff 30%);
+    border: 1px solid #def5ff;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .box-card2 {
+    background-image: linear-gradient(to bottom, #fff4dc, #ffffff 30%);
+    border: 1px solid #fff4dc;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .box-card3 {
+    background-image: linear-gradient(to bottom, #f2e8ff, #ffffff 30%);
+    border: 1px solid #f2e8ff;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .box-card1-button,
+  .box-card2-button,
+  .box-card3-button {
+    background-color: #5490f5; /* Common button color */
+    color: #fff;
+    width: 122px;
+    height: 41px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+  }
+  
+  .box-card1-button:hover,
+  .box-card2-button:hover,
+  .box-card3-button:hover {
+    background-color: white;
+    color: #5490f5;
+    cursor: pointer;
+    border: 2px solid #5490f5;
+  }
+  
+  .curriculum-nav-btns {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #f39c12;
+  }
+  
+  .curriculum-nav-btns button {
+    width: 45%;
+    height: 100%;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .curriculum-nav-btns button:hover {
+    background-color: #e68a00;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .curriculum-cards {
+      grid-template-columns: 1fr; /* Display cards in a single column on smaller screens */
+    }
+  }
+    /* Stories styles */
+    .display-block{
+        display: block;
+    }
+    .stories{
+        gap: 60px;
+        padding: 60px 0px;
+        height: 1000px;
+    }
+    .story-cards-container{
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    .story-cards{
+        height: 50rem;
+        width: 90%;
+        text-align: center;
+        /* border: 2px solid orange; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0px;
+        gap: 15px;
+        padding: 0px;
+    }
+    .story-card{
+        width: 100%;
+        height: 15rem;
+        background-color: white;
+        border-radius: 1rem 1rem 1rem 1rem;
+        text-align: left;
+        position: relative;
+    }
+    .story-card img{
+        width: 100%;
+        height: 60%;
+        object-fit: cover;
+        border-radius: 1rem 1rem 0px 0px;
+    }
+    
+    .story-card-content{
+        position: relative;
+    }
+    .story-card-content h4{
+        padding: 1.5rem;
+        line-height: 1.5;
+        font-size: 0.7rem;
+        font-weight: bold;
+        padding-top: 22px;
+    }
+    
+    .story-date{
+        width: 104px;
+        height: 23px;
+        background-color: #FFC76F;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 9px;
+        font-weight: 500;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        position: absolute;
+        left: 2rem;
+        top: -1rem;
+    }
+
+    .capsule-green{
+        background-color: #95B226;
+    }
+    .capsule-sky{
+        background-color: #3CD8E8;
+    }
+    
+    .capsule-blue{
+        background-color: #5D58F0;
+    }
+    .view-button{
+        background-color:rgb(0, 0, 1);
+        color: rgba(255, 255, 255, 1);
+        width: 122px;
+        height: 41px;
+        font-weight: 600px;
+        font-size: 16px;
+        border-radius: 8px;
+        border: none;
+      }
+      /*View-button  hover*/
+     .view-button button:hover{
+        display: block;
+        filter: drop-shadow(0 0 20px #88a7dc);
+        background-color: white;
+        cursor: pointer;
+    }
+    
+
+    /* Footer styles */
+    .footer{
+        background-color: #01ACFD;
+        color: white;
+        font-family: 'Quicksand', sans-serif;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        padding: 60px 16px;
+    }
+    .footer-nav{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        gap: 10px;
+        padding: 32px 0px;
+    }
+    .footer-description{
+        font-size: 1rem;
+        max-width: 330px;
+    }
+}
